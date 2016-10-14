@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recreational Volleyball</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Port Washington Recreational Volleyball League">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300|Oswald:700" rel="stylesheet">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
+</head>
+<body>
+
+	<nav class="navbar navbar-fixed-top navbar-inverse bg-1">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Recreational Volleyball</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="howtoplay.html">How To Play</a></li>
+						<li><a href="tournaments.html">Tournaments</a></li>
+						<li class="active"><a href="aboutme.html">About Me</a></li>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="w3-content w3-section max-width banner">
+	  <img class="mySlides mePics" src="img/aboutme.jpg" alt="Picture of me">
+	  <img class="mySlides mePics" src="img/aboutme2.jpg" alt="Picture of me">
+	  <img class="mySlides mePics" src="img/aboutme3.jpg" alt="Picture of me">
+	</div>
+
+	<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	    var i;
+	    var x = document.getElementsByClassName("mySlides");
+	    for (i = 0; i < x.length; i++) {
+	       x[i].style.display = "none";
+	    }
+	    myIndex++;
+	    if (myIndex > x.length) {myIndex = 1}
+	    x[myIndex-1].style.display = "block";
+	    setTimeout(carousel, 3000); // Change image every 3 seconds
+		}
+	</script>
+
+	<div class="container-fluid text-left">
+		<center><h1>Passion For Volleyball</h1></center>
+		<p>My name is Nicholas Underwood and I am 24 years old. I was married this last New Year's Eve to my wonderful wife Mikala and we packed up and moved to Port Washington, WI. Growing up volleyball started out as something I didn't like very much. Almost every weekend my parents would play in a volleyball tournament. I would go from being ball boy to passing with anyone who was willing. At the same time this was probably the main reason that I got into volleyball. My father was nicknamed "The Legend" and has won or played in a lot of the tournament listed on the tournament page. He played at the "Open" level which is the highest level of play. He was also inducted into the Hall of Fame the other year at the Waupaca Boatride volleyball tournament.</p>
+		<p>As a freshman in High School was when I really started to switch to playing volleyball. Growing up I played basketball, football, soccer, and baseball changing in the car from one sport to another. During football my freshman year I tore my ACL and had to take time off from sports. When I healed I decided that I wanted to play volleyball with my dad. He was finally willing to play with me after 20+ years playig at the highest level. When we started out it was a learning curve but eventually we got good enough together even at his age and my height to play at a high level. This bond made me really close with my father and is one of the reasons I love volleyball.</p>
+		<p>I recently got married this last New Year's Eve to my amazing wife, who I happened to meet through volleyball. The bond between my father and I transitioned from father to son into becoming best friends. This is why he was the Best Man at my wedding along with 8 other groomsmen which 5 of them I met from playing volleyball. Overall volleyball hasn't just been something for me to do it has become a way of life with a great community of friends.</p>
+	</div>
+
+	<div class="container-fluid text-center">
+		<h1>Places I've Played</h1>
+		<div class="row">
+			<div class="col-sm-4">
+				<p>Waupaca Boatride</p>
+				<img src="img/mevball1.jpg" class="img-responsive jpgWidth" alt="Picture of me playing volleyball at Waupaca Boatride">
+			</div>
+			<div class="col-sm-4">
+				<p>Wiggly Field</p>
+				<img src="img/mevball2.jpg" class="img-responsive jpgWidth" alt="Picture playing volleyball at Wiggly Field">
+			</div>
+			<div class="col-sm-4">
+				<p>Player's Lounge</p>
+				<img src="img/mevball3.jpg" class="img-responsive jpgWidth" alt="Picture playing volleyball at Player's Lounge">
+			</div>
+		</div>
+	</div>
+
+	<footer class="container-fluid text-center bg-1 footerPadding">
+		<p> Created By Nicholas Underwood at <a href="http://devcodecamp.com" target="_blank">DevCodeCamp</a></p>
+	</footer>
+
+</body>
+</html>
